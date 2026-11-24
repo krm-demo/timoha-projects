@@ -1,7 +1,7 @@
-# ai-timoha-projects — Timoha Market (prototype)
+# timoha-projects — Timoha Market (prototype)
 
 Clickable prototype of the **Eneba Intern Assignment 2027**: a digital-keys marketplace in Eneba's style.
-Static site (vanilla JS, hash router) — deployed to GitHub Pages as a quick preview of what the final app should look like.
+Static site (vanilla JS, hash router) — deployed to GitHub Pages (https://krm-demo.github.io/timoha-projects/) as a quick preview of what the final app should look like.
 
 ## What works
 | Requirement | Prototype |
