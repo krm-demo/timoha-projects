@@ -3,7 +3,7 @@ FROM golang:1.24-alpine AS build
 WORKDIR /src/backend
 COPY backend/ .
 # The Postgres driver is the only third-party dependency, and only for -tags postgres.
-RUN go get github.com/jackc/pgx/v5@v5.7.2 \
+RUN go get github.com/jackc/pgx/v5@v5.7.2 && go mod tidy \
  && CGO_ENABLED=0 go build -tags postgres -trimpath -ldflags="-s -w" -o /out/server ./cmd/server
 
 FROM alpine:3.20

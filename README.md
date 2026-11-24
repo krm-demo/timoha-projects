@@ -67,7 +67,7 @@ go test ./...                     # unit + API tests
 go run ./cmd/server               # http://localhost:8080  (API + frontend, JSON-file DB in data/db.json)
 
 # with PostgreSQL
-go get github.com/jackc/pgx/v5@v5.7.2
+go get github.com/jackc/pgx/v5@v5.7.2 && go mod tidy
 DATABASE_URL=postgres://user:pass@localhost:5432/timoha go run -tags postgres ./cmd/server
 ```
 
