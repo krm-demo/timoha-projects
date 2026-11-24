@@ -1,0 +1,16 @@
+{
+ "service": "deals-service",
+ "title": "Hot deals",
+ "productIds": [
+  16,
+  7,
+  18,
+  19,
+  1,
+  11,
+  5,
+  3,
+  17,
+  25
+ ]
+}

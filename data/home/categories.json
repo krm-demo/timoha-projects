@@ -1,0 +1,38 @@
+{
+ "service": "categories-service",
+ "title": "Shop by platform",
+ "items": [
+  {
+   "label": "Steam",
+   "link": "#/store?platform=Steam"
+  },
+  {
+   "label": "PSN",
+   "link": "#/store?platform=PSN"
+  },
+  {
+   "label": "Xbox",
+   "link": "#/store?platform=Xbox"
+  },
+  {
+   "label": "Nintendo",
+   "link": "#/store?platform=Nintendo"
+  },
+  {
+   "label": "EA app",
+   "link": "#/store?platform=EA%20app"
+  },
+  {
+   "label": "Ubisoft",
+   "link": "#/store?platform=Ubisoft"
+  },
+  {
+   "label": "GOG",
+   "link": "#/store?platform=GOG"
+  },
+  {
+   "label": "Roblox",
+   "link": "#/store?platform=Roblox"
+  }
+ ]
+}

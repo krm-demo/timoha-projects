@@ -1,0 +1,1426 @@
+[
+ {
+  "id": 1,
+  "slug": "elden-ring",
+  "name": "Elden Ring",
+  "platform": "Steam",
+  "region": "Global",
+  "type": "Game",
+  "genre": "RPG",
+  "year": 2022,
+  "msrp": 59.99,
+  "colors": [
+   "#3a2a12",
+   "#c9a24a"
+  ],
+  "rating": 4.56,
+  "sold": 29477,
+  "description": "Elden Ring — digital game key for Steam, region Global. Activate it on Steam and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "GameNest",
+    "rating": 96.8,
+    "reviews": 23330,
+    "price": 19.34,
+    "stock": 223,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "NordicCodes",
+    "rating": 96.4,
+    "reviews": 153574,
+    "price": 21.84,
+    "stock": 30,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "LuckyKeys",
+    "rating": 99.7,
+    "reviews": 152084,
+    "price": 27.3,
+    "stock": 300,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "DigiBazaar",
+    "rating": 96.9,
+    "reviews": 145253,
+    "price": 33.2,
+    "stock": 218,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "PixelVault",
+    "rating": 98.2,
+    "reviews": 59320,
+    "price": 43.33,
+    "stock": 323,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "slug": "cyberpunk-2077",
+  "name": "Cyberpunk 2077",
+  "platform": "GOG",
+  "region": "Global",
+  "type": "Game",
+  "genre": "RPG",
+  "year": 2020,
+  "msrp": 49.99,
+  "colors": [
+   "#1b1b3a",
+   "#f5e663"
+  ],
+  "rating": 4.34,
+  "sold": 8312,
+  "description": "Cyberpunk 2077 — digital game key for GOG, region Global. Activate it on GOG and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "MoonKeys",
+    "rating": 96.7,
+    "reviews": 153262,
+    "price": 18.32,
+    "stock": 293,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "GameNest",
+    "rating": 97.5,
+    "reviews": 144387,
+    "price": 22.48,
+    "stock": 365,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "NordicCodes",
+    "rating": 96.5,
+    "reviews": 81666,
+    "price": 34.1,
+    "stock": 287,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "slug": "red-dead-redemption-2",
+  "name": "Red Dead Redemption 2",
+  "platform": "Rockstar",
+  "region": "Global",
+  "type": "Game",
+  "genre": "Action",
+  "year": 2019,
+  "msrp": 59.99,
+  "colors": [
+   "#3b0d0d",
+   "#d8362b"
+  ],
+  "rating": 4.94,
+  "sold": 15975,
+  "description": "Red Dead Redemption 2 — digital game key for Rockstar, region Global. Activate it on Rockstar and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "GameNest",
+    "rating": 98.8,
+    "reviews": 76281,
+    "price": 20.32,
+    "stock": 312,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "MoonKeys",
+    "rating": 97.8,
+    "reviews": 119599,
+    "price": 23.08,
+    "stock": 186,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "DigiBazaar",
+    "rating": 99.1,
+    "reviews": 184037,
+    "price": 36.54,
+    "stock": 400,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "LuckyKeys",
+    "rating": 98.2,
+    "reviews": 138477,
+    "price": 38.11,
+    "stock": 254,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "slug": "baldur-s-gate-3",
+  "name": "Baldur's Gate 3",
+  "platform": "Steam",
+  "region": "Global",
+  "type": "Game",
+  "genre": "RPG",
+  "year": 2023,
+  "msrp": 59.99,
+  "colors": [
+   "#20112f",
+   "#b98cff"
+  ],
+  "rating": 4.48,
+  "sold": 51066,
+  "description": "Baldur's Gate 3 — digital game key for Steam, region Global. Activate it on Steam and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "GameNest",
+    "rating": 96.3,
+    "reviews": 192469,
+    "price": 25.34,
+    "stock": 360,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "MoonKeys",
+    "rating": 98.3,
+    "reviews": 152816,
+    "price": 25.39,
+    "stock": 234,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "ByteShop",
+    "rating": 99.4,
+    "reviews": 83047,
+    "price": 28.84,
+    "stock": 175,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "LuckyKeys",
+    "rating": 98.3,
+    "reviews": 179382,
+    "price": 36.26,
+    "stock": 229,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 96.4,
+    "reviews": 71562,
+    "price": 43.05,
+    "stock": 243,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "NordicCodes",
+    "rating": 98.6,
+    "reviews": 201227,
+    "price": 43.89,
+    "stock": 286,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "slug": "hogwarts-legacy",
+  "name": "Hogwarts Legacy",
+  "platform": "Steam",
+  "region": "EU",
+  "type": "Game",
+  "genre": "Adventure",
+  "year": 2023,
+  "msrp": 49.99,
+  "colors": [
+   "#14213d",
+   "#e0b04f"
+  ],
+  "rating": 4.87,
+  "sold": 30745,
+  "description": "Hogwarts Legacy — digital game key for Steam, region EU. Activate it on Steam and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "KeyKingdom",
+    "rating": 99.2,
+    "reviews": 227288,
+    "price": 16.74,
+    "stock": 282,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "GameNest",
+    "rating": 97.6,
+    "reviews": 229238,
+    "price": 20.14,
+    "stock": 255,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "PixelVault",
+    "rating": 96.9,
+    "reviews": 76148,
+    "price": 25.89,
+    "stock": 67,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "MoonKeys",
+    "rating": 97.6,
+    "reviews": 94849,
+    "price": 30.95,
+    "stock": 350,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "NordicCodes",
+    "rating": 97.8,
+    "reviews": 144832,
+    "price": 35.6,
+    "stock": 143,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "slug": "minecraft-java-bedrock",
+  "name": "Minecraft Java & Bedrock",
+  "platform": "Microsoft",
+  "region": "Global",
+  "type": "Game",
+  "genre": "Sandbox",
+  "year": 2011,
+  "msrp": 29.99,
+  "colors": [
+   "#1f3b1a",
+   "#7dc35b"
+  ],
+  "rating": 4.74,
+  "sold": 7576,
+  "description": "Minecraft Java & Bedrock — digital game key for Microsoft, region Global. Activate it on Microsoft and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "DigiBazaar",
+    "rating": 98.0,
+    "reviews": 162698,
+    "price": 12.76,
+    "stock": 336,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 96.0,
+    "reviews": 218666,
+    "price": 13.21,
+    "stock": 302,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "ByteShop",
+    "rating": 98.4,
+    "reviews": 84322,
+    "price": 14.96,
+    "stock": 65,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "MoonKeys",
+    "rating": 97.1,
+    "reviews": 38988,
+    "price": 19.92,
+    "stock": 215,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "slug": "ea-sports-fc-26",
+  "name": "EA Sports FC 26",
+  "platform": "EA app",
+  "region": "Global",
+  "type": "Game",
+  "genre": "Sports",
+  "year": 2025,
+  "msrp": 69.99,
+  "colors": [
+   "#032a2a",
+   "#22e3a8"
+  ],
+  "rating": 4.95,
+  "sold": 61578,
+  "description": "EA Sports FC 26 — digital game key for EA app, region Global. Activate it on EA app and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "DigiBazaar",
+    "rating": 98.4,
+    "reviews": 19232,
+    "price": 21.28,
+    "stock": 107,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "ByteShop",
+    "rating": 96.2,
+    "reviews": 18454,
+    "price": 31.63,
+    "stock": 107,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "PixelVault",
+    "rating": 96.6,
+    "reviews": 66927,
+    "price": 32.29,
+    "stock": 178,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 97.8,
+    "reviews": 31039,
+    "price": 32.68,
+    "stock": 250,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "GameNest",
+    "rating": 96.4,
+    "reviews": 158277,
+    "price": 38.0,
+    "stock": 27,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "MoonKeys",
+    "rating": 98.2,
+    "reviews": 141471,
+    "price": 49.12,
+    "stock": 52,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "slug": "forza-horizon-5",
+  "name": "Forza Horizon 5",
+  "platform": "Xbox",
+  "region": "Global",
+  "type": "Game",
+  "genre": "Racing",
+  "year": 2021,
+  "msrp": 59.99,
+  "colors": [
+   "#2b0d36",
+   "#ff5fa2"
+  ],
+  "rating": 4.63,
+  "sold": 83919,
+  "description": "Forza Horizon 5 — digital game key for Xbox, region Global. Activate it on Xbox and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "DigiBazaar",
+    "rating": 97.0,
+    "reviews": 96928,
+    "price": 25.36,
+    "stock": 86,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 99.8,
+    "reviews": 227115,
+    "price": 30.1,
+    "stock": 47,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "ByteShop",
+    "rating": 96.9,
+    "reviews": 142768,
+    "price": 34.96,
+    "stock": 399,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "MoonKeys",
+    "rating": 97.0,
+    "reviews": 218079,
+    "price": 35.33,
+    "stock": 355,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "NordicCodes",
+    "rating": 96.1,
+    "reviews": 139279,
+    "price": 40.44,
+    "stock": 186,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "PixelVault",
+    "rating": 98.1,
+    "reviews": 7889,
+    "price": 40.86,
+    "stock": 389,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "slug": "starfield",
+  "name": "Starfield",
+  "platform": "Xbox",
+  "region": "US",
+  "type": "Game",
+  "genre": "RPG",
+  "year": 2023,
+  "msrp": 69.99,
+  "colors": [
+   "#0c1a2b",
+   "#d7dde5"
+  ],
+  "rating": 4.35,
+  "sold": 13889,
+  "description": "Starfield — digital game key for Xbox, region US. Activate it on Xbox and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "GameNest",
+    "rating": 96.9,
+    "reviews": 136495,
+    "price": 28.15,
+    "stock": 253,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 96.8,
+    "reviews": 159433,
+    "price": 36.96,
+    "stock": 177,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "MoonKeys",
+    "rating": 99.7,
+    "reviews": 92424,
+    "price": 37.78,
+    "stock": 187,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "ByteShop",
+    "rating": 96.1,
+    "reviews": 8123,
+    "price": 40.8,
+    "stock": 144,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 10,
+  "slug": "helldivers-2",
+  "name": "Helldivers 2",
+  "platform": "PSN",
+  "region": "EU",
+  "type": "Game",
+  "genre": "Shooter",
+  "year": 2024,
+  "msrp": 39.99,
+  "colors": [
+   "#14161a",
+   "#f3c623"
+  ],
+  "rating": 4.58,
+  "sold": 83841,
+  "description": "Helldivers 2 — digital game key for PSN, region EU. Activate it on PSN and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "ByteShop",
+    "rating": 98.9,
+    "reviews": 126113,
+    "price": 15.29,
+    "stock": 92,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "MoonKeys",
+    "rating": 99.8,
+    "reviews": 160776,
+    "price": 20.92,
+    "stock": 1,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 98.5,
+    "reviews": 210421,
+    "price": 20.98,
+    "stock": 330,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "NordicCodes",
+    "rating": 98.6,
+    "reviews": 239292,
+    "price": 28.4,
+    "stock": 199,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "slug": "ghost-of-tsushima",
+  "name": "Ghost of Tsushima",
+  "platform": "PSN",
+  "region": "Global",
+  "type": "Game",
+  "genre": "Action",
+  "year": 2024,
+  "msrp": 59.99,
+  "colors": [
+   "#2a0a0a",
+   "#ffffff"
+  ],
+  "rating": 4.82,
+  "sold": 85654,
+  "description": "Ghost of Tsushima — digital game key for PSN, region Global. Activate it on PSN and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "DigiBazaar",
+    "rating": 99.1,
+    "reviews": 39118,
+    "price": 19.48,
+    "stock": 314,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "GameNest",
+    "rating": 99.8,
+    "reviews": 173098,
+    "price": 21.69,
+    "stock": 180,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 99.7,
+    "reviews": 190801,
+    "price": 33.68,
+    "stock": 82,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "ByteShop",
+    "rating": 96.5,
+    "reviews": 40423,
+    "price": 40.2,
+    "stock": 303,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "LuckyKeys",
+    "rating": 98.1,
+    "reviews": 6409,
+    "price": 40.6,
+    "stock": 8,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 12,
+  "slug": "the-legend-of-zelda-tears-of-the-kingdom",
+  "name": "The Legend of Zelda: Tears of the Kingdom",
+  "platform": "Nintendo",
+  "region": "EU",
+  "type": "Game",
+  "genre": "Adventure",
+  "year": 2023,
+  "msrp": 69.99,
+  "colors": [
+   "#0f2d2a",
+   "#a3e0c4"
+  ],
+  "rating": 4.89,
+  "sold": 46871,
+  "description": "The Legend of Zelda: Tears of the Kingdom — digital game key for Nintendo, region EU. Activate it on Nintendo and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "NordicCodes",
+    "rating": 96.8,
+    "reviews": 66816,
+    "price": 25.32,
+    "stock": 109,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "GameNest",
+    "rating": 96.9,
+    "reviews": 154530,
+    "price": 42.86,
+    "stock": 167,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 97.6,
+    "reviews": 35160,
+    "price": 43.96,
+    "stock": 32,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 13,
+  "slug": "mario-kart-8-deluxe",
+  "name": "Mario Kart 8 Deluxe",
+  "platform": "Nintendo",
+  "region": "EU",
+  "type": "Game",
+  "genre": "Racing",
+  "year": 2017,
+  "msrp": 59.99,
+  "colors": [
+   "#3b0a0a",
+   "#ffcc00"
+  ],
+  "rating": 4.36,
+  "sold": 59767,
+  "description": "Mario Kart 8 Deluxe — digital game key for Nintendo, region EU. Activate it on Nintendo and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "MoonKeys",
+    "rating": 99.0,
+    "reviews": 40069,
+    "price": 27.83,
+    "stock": 89,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "ByteShop",
+    "rating": 99.4,
+    "reviews": 204356,
+    "price": 30.6,
+    "stock": 94,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "DigiBazaar",
+    "rating": 99.0,
+    "reviews": 232332,
+    "price": 31.39,
+    "stock": 287,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "LuckyKeys",
+    "rating": 98.4,
+    "reviews": 32345,
+    "price": 41.0,
+    "stock": 285,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 98.7,
+    "reviews": 139926,
+    "price": 43.25,
+    "stock": 285,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "NordicCodes",
+    "rating": 96.7,
+    "reviews": 11862,
+    "price": 43.39,
+    "stock": 396,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 14,
+  "slug": "assassin-s-creed-shadows",
+  "name": "Assassin's Creed Shadows",
+  "platform": "Ubisoft",
+  "region": "EU",
+  "type": "Game",
+  "genre": "Action",
+  "year": 2025,
+  "msrp": 69.99,
+  "colors": [
+   "#1e1012",
+   "#c83a3a"
+  ],
+  "rating": 4.9,
+  "sold": 27053,
+  "description": "Assassin's Creed Shadows — digital game key for Ubisoft, region EU. Activate it on Ubisoft and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "GameNest",
+    "rating": 97.8,
+    "reviews": 140597,
+    "price": 29.7,
+    "stock": 245,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 98.0,
+    "reviews": 135060,
+    "price": 32.34,
+    "stock": 103,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "NordicCodes",
+    "rating": 97.0,
+    "reviews": 137956,
+    "price": 35.79,
+    "stock": 133,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 15,
+  "slug": "stardew-valley",
+  "name": "Stardew Valley",
+  "platform": "Steam",
+  "region": "Global",
+  "type": "Game",
+  "genre": "Simulation",
+  "year": 2016,
+  "msrp": 14.99,
+  "colors": [
+   "#16341f",
+   "#ffd36e"
+  ],
+  "rating": 4.76,
+  "sold": 68081,
+  "description": "Stardew Valley — digital game key for Steam, region Global. Activate it on Steam and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "LuckyKeys",
+    "rating": 96.4,
+    "reviews": 232779,
+    "price": 5.98,
+    "stock": 250,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "GameNest",
+    "rating": 99.1,
+    "reviews": 235950,
+    "price": 6.53,
+    "stock": 398,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 98.6,
+    "reviews": 59444,
+    "price": 10.1,
+    "stock": 83,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "PixelVault",
+    "rating": 98.8,
+    "reviews": 173882,
+    "price": 10.15,
+    "stock": 188,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "ByteShop",
+    "rating": 99.4,
+    "reviews": 123414,
+    "price": 10.24,
+    "stock": 113,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "NordicCodes",
+    "rating": 96.9,
+    "reviews": 19968,
+    "price": 10.73,
+    "stock": 109,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 16,
+  "slug": "hades-ii",
+  "name": "Hades II",
+  "platform": "Steam",
+  "region": "Global",
+  "type": "Game",
+  "genre": "Roguelike",
+  "year": 2025,
+  "msrp": 29.99,
+  "colors": [
+   "#1a0b25",
+   "#5be0ff"
+  ],
+  "rating": 4.85,
+  "sold": 89101,
+  "description": "Hades II — digital game key for Steam, region Global. Activate it on Steam and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "NordicCodes",
+    "rating": 99.1,
+    "reviews": 230540,
+    "price": 8.61,
+    "stock": 54,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "DigiBazaar",
+    "rating": 96.1,
+    "reviews": 146040,
+    "price": 12.31,
+    "stock": 235,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 98.0,
+    "reviews": 17653,
+    "price": 13.7,
+    "stock": 58,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "GameNest",
+    "rating": 96.1,
+    "reviews": 87700,
+    "price": 16.28,
+    "stock": 265,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "PixelVault",
+    "rating": 98.9,
+    "reviews": 215699,
+    "price": 19.93,
+    "stock": 217,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "LuckyKeys",
+    "rating": 97.1,
+    "reviews": 238275,
+    "price": 21.31,
+    "stock": 399,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 17,
+  "slug": "black-myth-wukong",
+  "name": "Black Myth: Wukong",
+  "platform": "Steam",
+  "region": "Global",
+  "type": "Game",
+  "genre": "Action",
+  "year": 2024,
+  "msrp": 59.99,
+  "colors": [
+   "#211509",
+   "#e88d2b"
+  ],
+  "rating": 4.9,
+  "sold": 35608,
+  "description": "Black Myth: Wukong — digital game key for Steam, region Global. Activate it on Steam and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "DigiBazaar",
+    "rating": 96.3,
+    "reviews": 226971,
+    "price": 20.85,
+    "stock": 63,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "ByteShop",
+    "rating": 96.3,
+    "reviews": 15880,
+    "price": 25.24,
+    "stock": 353,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "LuckyKeys",
+    "rating": 99.1,
+    "reviews": 22752,
+    "price": 27.1,
+    "stock": 312,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "GameNest",
+    "rating": 97.3,
+    "reviews": 145782,
+    "price": 32.2,
+    "stock": 214,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 99.5,
+    "reviews": 71296,
+    "price": 39.82,
+    "stock": 9,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 18,
+  "slug": "xbox-game-pass-ultimate-3-months",
+  "name": "Xbox Game Pass Ultimate 3 Months",
+  "platform": "Xbox",
+  "region": "EU",
+  "type": "Subscription",
+  "genre": "Subscription",
+  "year": 2024,
+  "msrp": 50.97,
+  "colors": [
+   "#0a2b0a",
+   "#3bd16f"
+  ],
+  "rating": 4.95,
+  "sold": 5343,
+  "description": "Xbox Game Pass Ultimate 3 Months — digital subscription key for Xbox, region EU. Activate it on Xbox and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "PixelVault",
+    "rating": 99.8,
+    "reviews": 69454,
+    "price": 15.75,
+    "stock": 26,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 97.1,
+    "reviews": 211479,
+    "price": 22.13,
+    "stock": 10,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "DigiBazaar",
+    "rating": 96.8,
+    "reviews": 117634,
+    "price": 25.5,
+    "stock": 257,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "LuckyKeys",
+    "rating": 99.6,
+    "reviews": 165602,
+    "price": 33.89,
+    "stock": 157,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 19,
+  "slug": "playstation-plus-essential-12-months",
+  "name": "PlayStation Plus Essential 12 Months",
+  "platform": "PSN",
+  "region": "EU",
+  "type": "Subscription",
+  "genre": "Subscription",
+  "year": 2024,
+  "msrp": 71.99,
+  "colors": [
+   "#04163a",
+   "#ffd400"
+  ],
+  "rating": 4.93,
+  "sold": 40841,
+  "description": "PlayStation Plus Essential 12 Months — digital subscription key for PSN, region EU. Activate it on PSN and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "DigiBazaar",
+    "rating": 96.4,
+    "reviews": 215475,
+    "price": 22.37,
+    "stock": 333,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "PixelVault",
+    "rating": 96.7,
+    "reviews": 125255,
+    "price": 35.35,
+    "stock": 126,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "LuckyKeys",
+    "rating": 97.9,
+    "reviews": 219589,
+    "price": 39.37,
+    "stock": 202,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 20,
+  "slug": "steam-gift-card-20-eur",
+  "name": "Steam Gift Card 20 EUR",
+  "platform": "Steam",
+  "region": "EU",
+  "type": "Gift card",
+  "genre": "Gift card",
+  "year": 2024,
+  "msrp": 20.0,
+  "colors": [
+   "#0b1b2e",
+   "#66c0f4"
+  ],
+  "rating": 4.46,
+  "sold": 38911,
+  "description": "Steam Gift Card 20 EUR — digital gift card key for Steam, region EU. Activate it on Steam and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "DigiBazaar",
+    "rating": 98.6,
+    "reviews": 74707,
+    "price": 17.86,
+    "stock": 307,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 96.2,
+    "reviews": 175185,
+    "price": 18.74,
+    "stock": 196,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "GameNest",
+    "rating": 97.4,
+    "reviews": 15057,
+    "price": 18.79,
+    "stock": 67,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "NordicCodes",
+    "rating": 98.4,
+    "reviews": 231448,
+    "price": 19.57,
+    "stock": 131,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 21,
+  "slug": "playstation-store-gift-card-50-eur",
+  "name": "PlayStation Store Gift Card 50 EUR",
+  "platform": "PSN",
+  "region": "EU",
+  "type": "Gift card",
+  "genre": "Gift card",
+  "year": 2024,
+  "msrp": 50.0,
+  "colors": [
+   "#00205b",
+   "#ffffff"
+  ],
+  "rating": 4.3,
+  "sold": 50520,
+  "description": "PlayStation Store Gift Card 50 EUR — digital gift card key for PSN, region EU. Activate it on PSN and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "KeyKingdom",
+    "rating": 98.1,
+    "reviews": 64880,
+    "price": 44.14,
+    "stock": 18,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "ByteShop",
+    "rating": 97.2,
+    "reviews": 94276,
+    "price": 44.17,
+    "stock": 94,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "MoonKeys",
+    "rating": 96.0,
+    "reviews": 96257,
+    "price": 47.65,
+    "stock": 169,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 22,
+  "slug": "nintendo-eshop-card-25-eur",
+  "name": "Nintendo eShop Card 25 EUR",
+  "platform": "Nintendo",
+  "region": "EU",
+  "type": "Gift card",
+  "genre": "Gift card",
+  "year": 2024,
+  "msrp": 25.0,
+  "colors": [
+   "#3b0000",
+   "#ff4d4d"
+  ],
+  "rating": 4.71,
+  "sold": 11573,
+  "description": "Nintendo eShop Card 25 EUR — digital gift card key for Nintendo, region EU. Activate it on Nintendo and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "MoonKeys",
+    "rating": 97.0,
+    "reviews": 204286,
+    "price": 22.86,
+    "stock": 3,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "LuckyKeys",
+    "rating": 97.5,
+    "reviews": 79350,
+    "price": 23.03,
+    "stock": 156,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "NordicCodes",
+    "rating": 99.2,
+    "reviews": 38513,
+    "price": 24.27,
+    "stock": 205,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 23,
+  "slug": "roblox-gift-card-10-usd",
+  "name": "Roblox Gift Card 10 USD",
+  "platform": "Roblox",
+  "region": "US",
+  "type": "Gift card",
+  "genre": "Gift card",
+  "year": 2024,
+  "msrp": 10.0,
+  "colors": [
+   "#1a1a1a",
+   "#e2231a"
+  ],
+  "rating": 4.84,
+  "sold": 2607,
+  "description": "Roblox Gift Card 10 USD — digital gift card key for Roblox, region US. Activate it on Roblox and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "NordicCodes",
+    "rating": 98.9,
+    "reviews": 213718,
+    "price": 9.17,
+    "stock": 259,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "ByteShop",
+    "rating": 98.8,
+    "reviews": 169416,
+    "price": 9.65,
+    "stock": 75,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "GameNest",
+    "rating": 98.0,
+    "reviews": 133017,
+    "price": 9.66,
+    "stock": 292,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "MoonKeys",
+    "rating": 99.3,
+    "reviews": 234617,
+    "price": 9.76,
+    "stock": 263,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 24,
+  "slug": "cyberpunk-2077-phantom-liberty",
+  "name": "Cyberpunk 2077: Phantom Liberty",
+  "platform": "GOG",
+  "region": "Global",
+  "type": "DLC",
+  "genre": "RPG",
+  "year": 2023,
+  "msrp": 29.99,
+  "colors": [
+   "#2b0d0d",
+   "#ff3b3b"
+  ],
+  "rating": 4.36,
+  "sold": 69442,
+  "description": "Cyberpunk 2077: Phantom Liberty — digital dlc key for GOG, region Global. Activate it on GOG and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "MoonKeys",
+    "rating": 98.9,
+    "reviews": 132650,
+    "price": 11.25,
+    "stock": 275,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "ByteShop",
+    "rating": 97.9,
+    "reviews": 1668,
+    "price": 12.9,
+    "stock": 234,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 99.7,
+    "reviews": 99528,
+    "price": 13.51,
+    "stock": 232,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "PixelVault",
+    "rating": 98.4,
+    "reviews": 164961,
+    "price": 14.62,
+    "stock": 273,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 25,
+  "slug": "elden-ring-nightreign",
+  "name": "Elden Ring Nightreign",
+  "platform": "Steam",
+  "region": "Global",
+  "type": "Game",
+  "genre": "Action",
+  "year": 2025,
+  "msrp": 39.99,
+  "colors": [
+   "#121212",
+   "#bfa76a"
+  ],
+  "rating": 4.49,
+  "sold": 6627,
+  "description": "Elden Ring Nightreign — digital game key for Steam, region Global. Activate it on Steam and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "MoonKeys",
+    "rating": 96.9,
+    "reviews": 199096,
+    "price": 14.09,
+    "stock": 106,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "PixelVault",
+    "rating": 96.3,
+    "reviews": 239473,
+    "price": 14.1,
+    "stock": 351,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "NordicCodes",
+    "rating": 98.5,
+    "reviews": 121475,
+    "price": 25.66,
+    "stock": 253,
+    "delivery": "Instant"
+   }
+  ]
+ },
+ {
+  "id": 26,
+  "slug": "counter-strike-2-prime-status",
+  "name": "Counter-Strike 2 Prime Status",
+  "platform": "Steam",
+  "region": "Global",
+  "type": "DLC",
+  "genre": "Shooter",
+  "year": 2023,
+  "msrp": 14.99,
+  "colors": [
+   "#1f1a0e",
+   "#f7a21b"
+  ],
+  "rating": 4.6,
+  "sold": 61624,
+  "description": "Counter-Strike 2 Prime Status — digital dlc key for Steam, region Global. Activate it on Steam and start playing right away. The code arrives instantly after payment.",
+  "offers": [
+   {
+    "seller": "NordicCodes",
+    "rating": 97.1,
+    "reviews": 136206,
+    "price": 6.48,
+    "stock": 147,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "LuckyKeys",
+    "rating": 96.0,
+    "reviews": 16701,
+    "price": 7.24,
+    "stock": 249,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "MoonKeys",
+    "rating": 98.6,
+    "reviews": 182252,
+    "price": 9.35,
+    "stock": 112,
+    "delivery": "Instant"
+   },
+   {
+    "seller": "KeyKingdom",
+    "rating": 98.9,
+    "reviews": 80601,
+    "price": 9.45,
+    "stock": 319,
+    "delivery": "Instant"
+   }
+  ]
+ }
+]

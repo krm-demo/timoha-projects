@@ -1,0 +1,36 @@
+{
+ "service": "banner-service",
+ "slides": [
+  {
+   "title": "Black Friday Week",
+   "subtitle": "Up to -75% on top games & gift cards",
+   "cta": "Shop deals",
+   "link": "#/store?sort=discount",
+   "colors": [
+    "#5a1fd1",
+    "#ff3fa4"
+   ],
+   "productId": null
+  },
+  {
+   "title": "Hades II",
+   "subtitle": "Bestseller of the week \u2014 from \u20ac8.61",
+   "cta": "Buy now",
+   "link": "#/product/hades-ii",
+   "colors": [
+    "#1a0b25",
+    "#5be0ff"
+   ]
+  },
+  {
+   "title": "Gift cards, delivered instantly",
+   "subtitle": "Steam, PSN, Nintendo, Roblox and more",
+   "cta": "Browse gift cards",
+   "link": "#/store?type=Gift%20card",
+   "colors": [
+    "#0c3b6e",
+    "#33d6ff"
+   ]
+  }
+ ]
+}
