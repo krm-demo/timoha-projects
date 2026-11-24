@@ -1,0 +1,60 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+      - name: gofmt
+        run: test -z "$(gofmt -l .)" || (gofmt -l . && exit 1)
+      - run: go vet ./...
+      - name: Unit + API tests (JSON-file store)
+        run: go test -race ./...
+
+  postgres:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: timoha
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 10
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+      - name: Add the Postgres driver
+        run: go get github.com/jackc/pgx/v5@v5.7.2
+      - run: go vet -tags postgres ./...
+      - name: Store contract tests against PostgreSQL
+        env:
+          TEST_DATABASE_URL: postgres://postgres:postgres@localhost:5432/timoha?sslmode=disable
+        run: go test -tags postgres -v -run PGStore ./internal/store/
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t timoha-market .
+      - name: Smoke test the image
+        run: |
+          docker run -d -p 8080:8080 --name tm timoha-market
+          for i in $(seq 1 20); do curl -fs localhost:8080/api/health && break; sleep 1; done
+          curl -fs "localhost:8080/api/search?q=eldn%20rng" | grep -q "Elden Ring"
+          curl -fs localhost:8080/ | grep -q timohamarket
