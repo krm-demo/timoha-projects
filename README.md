@@ -13,7 +13,7 @@ All data is demo data: prices and sellers are made up, and payments are simulate
 
 | File | For |
 |---|---|
-| [docs/HANDOFF.md](docs/HANDOFF.md) | **Start here when you take over:** copy the repo, rename, enable Pages, deploy to Render, submission checklist |
+| [docs/HANDOFF.md](docs/HANDOFF.md) · [Windows](docs/HANDOFF_WINDOWS.md) | **Start here when you take over:** copy the repo, rename, enable Pages, deploy to Render, submission checklist |
 | [docs/ROADMAP.md](docs/ROADMAP.md) · [RU](docs/ROADMAP-ru.md) | Next steps with estimates: React + TypeScript port (required), smart search, deployment, EN/DE, backend ideas |
 | [docs/SMART_SEARCH.md](docs/SMART_SEARCH.md) · [RU](docs/SMART_SEARCH-ru.md) | **The proposed differentiator:** search that turns queries into pills, groups listings by game and shows which keys work in the buyer's country |
 | [docs/DEPLOY_WINDOWS.md](docs/DEPLOY_WINDOWS.md) | The same run/deploy commands for **Windows PowerShell** (no `&&`, `$env:` instead of `export`) |

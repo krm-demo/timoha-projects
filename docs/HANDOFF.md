@@ -1,10 +1,12 @@
 # Handoff: making this project yours
 
+> On Windows, use **[HANDOFF_WINDOWS.md](HANDOFF_WINDOWS.md)**: the same steps with PowerShell commands.
+
 Hi Tymofii! This repo is a working starting point for the **Eneba Intern Assignment 2027**. It contains:
 
 - a clickable frontend in `web/`;
 - a Go backend with tests in `backend/`;
-- CI, a Dockerfile and a Render deploy config.
+- CI, a Dockerfile, and deploy configs for Vercel (live: Go API on Vercel + Neon Postgres) and Render.
 
 This page explains how to take it over and what still needs to be done before you submit.
 
@@ -31,7 +33,7 @@ git push -u origin main
 | `README.md` | `krm-demo/timoha-projects` and `krm-demo.github.io/timoha-projects` → your repo / Pages URL |
 | `web/index.html` | footer link `id="repoLink"` |
 | `render.yaml` | `ALLOWED_ORIGINS` → `https://<your-user>.github.io` |
-| `web/config.js` | `TM_API_BASE` → your Render URL once the API is deployed |
+| `web/config.js` | the Vercel API URL (`https://timoha-api.vercel.app`) → yours |
 | `backend/go.mod` | module path, optional: `github.com/<your-user>/<your-repo>/backend`, then update imports with `grep -rl krm-demo backend \| xargs sed -i 's#krm-demo/timoha-projects#<your-user>/<your-repo>#g'` |
 
 Quick check that nothing is left: `grep -rn "krm-demo" .`
@@ -48,6 +50,10 @@ Quick check that nothing is left: `grep -rn "krm-demo" .`
    Keep it green.
 
 ## 4. Deploy the backend (free)
+
+**Recommended: Vercel + Neon.** It's free with no card, and the API starts in about a second. Follow [DEPLOY_VERCEL.md](DEPLOY_VERCEL.md): create a Neon database from Vercel → Storage, import the repo with **Root Directory = `backend`**, set `DATABASE_URL`, `JWT_SECRET` and `ALLOWED_ORIGINS`, then point `web/config.js` at your Vercel URL.
+
+**Alternative: Render** (Docker, sleeps when idle):
 
 1. Sign up at render.com with GitHub.
 2. **New → Blueprint** → choose your repo. Render reads `render.yaml`. It builds the Docker image, creates a free Postgres database and generates `JWT_SECRET`.
@@ -84,7 +90,7 @@ The deadline is **7 days after you received the assignment**. The email from Ene
 - [ ] Your full name
 - [ ] CV in English
 - [ ] GitHub link(s) to the project
-- [ ] Public URL of the deployed app (Render, or Vercel for a React frontend)
+- [ ] Public URL of the deployed app: your GitHub Pages site (header says **Live API**) and/or the Vercel API URL
 - [ ] Full AI chat history as a `.md` file or a link. Export the whole conversation; a summary is not enough. See `docs/AI_SESSION_LOG.md`.
 - [ ] Optional but recommended: a short note on scope and decisions. You can adapt "Why Go" and the requirements table from the README.
 
