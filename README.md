@@ -15,6 +15,7 @@ All data is demo data: prices and sellers are made up, and payments are simulate
 |---|---|
 | [docs/HANDOFF.md](docs/HANDOFF.md) | **Start here when you take over:** copy the repo, rename, enable Pages, deploy to Render, submission checklist |
 | [docs/ROADMAP.md](docs/ROADMAP.md) | Next steps: React + TypeScript port (required), EN/DE, backend ideas |
+| [docs/DEPLOY_AZURE.md](docs/DEPLOY_AZURE.md) | Deploy to Azure Container Apps + PostgreSQL Flexible Server (free tiers), and which Azure database to choose |
 | [docs/INTERVIEW_NOTES.md](docs/INTERVIEW_NOTES.md) | Likely interview questions, with answers pointing to the code |
 | [docs/AI_SESSION_LOG.md](docs/AI_SESSION_LOG.md) | Summary of how this was built with an AI agent (the full log still needs to be exported) |
 
@@ -141,7 +142,7 @@ What each version of *this* project would look like:
 
 The GitHub Pages site is not translated yet. Estimates:
 
-**1. Current site (vanilla JS): about half a day to one day**
+**1. Current site (vanilla JS): about half a day to one day by hand, or 15–30 minutes with an AI agent. The real bottleneck is a native speaker reviewing the German texts.**
 
 - `web/i18n.js` with `en` and `de` dictionaries (about 80 UI strings) and a `t('key')` helper. `app.js` uses `t()` instead of literal text.
 - A language switcher in the header. The language is picked from `?lang=` first, then the saved choice, then `navigator.language`, then English. It also sets `<html lang>`.
