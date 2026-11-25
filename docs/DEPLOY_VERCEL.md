@@ -33,7 +33,7 @@ Neon Postgres, Frankfurt        (created via Vercel → Storage → Neon, Free p
    | Name | Value |
    |---|---|
    | `DATABASE_URL` | Neon's **unpooled** URL (`postgresql://…@ep-….eu-central-1.aws.neon.tech/neondb?sslmode=require`, without `-pooler` and without `channel_binding`) |
-   | `JWT_SECRET` | a long random string, e.g. the output of `openssl rand -hex 32`. **Required on Vercel:** several instances must share it, or logins break |
+   | `JWT_SECRET` | a long random string, e.g. the output of `openssl rand -hex 32` (on Windows see [DEPLOY_WINDOWS.md](DEPLOY_WINDOWS.md#generate-a-secret-instead-of-openssl-rand--hex-32)). **Required on Vercel:** several instances must share it, or logins break |
    | `ALLOWED_ORIGINS` | `https://krm-demo.github.io` |
    | `STATIC_DIR` | *(empty)*, because the website is served by GitHub Pages |
 

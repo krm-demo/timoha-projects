@@ -61,6 +61,8 @@ Free-tier notes:
 
 ## 5. Run it on your computer
 
+> On Windows, use the PowerShell version of these steps: [DEPLOY_WINDOWS.md](DEPLOY_WINDOWS.md).
+
 You need Go 1.24 or newer.
 
 ```bash
