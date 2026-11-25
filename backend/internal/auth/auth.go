@@ -99,9 +99,15 @@ func (t Tokens) Issue(userID int64, email, name string) (string, error) {
 // Verify checks the signature and expiry and returns the claims.
 func (t Tokens) Verify(token string) (Claims, error) {
 	parts := strings.Split(token, ".")
+	// We only ever issue one header ({"alg":"HS256"}), so we require exactly
+	// that. This blocks the classic JWT attacks where a forged token says
+	// "alg":"none" or switches algorithms.
 	if len(parts) != 3 || parts[0] != header {
 		return Claims{}, ErrInvalidToken
 	}
+	// hmac.Equal compares in constant time: a normal == would return
+	// earlier for a wrong first byte, and that timing difference can be used
+	// to guess a valid signature byte by byte.
 	if !hmac.Equal([]byte(parts[2]), []byte(t.sign(parts[0]+"."+parts[1]))) {
 		return Claims{}, ErrInvalidToken
 	}

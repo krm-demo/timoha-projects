@@ -18,6 +18,7 @@ All data is demo data: prices and sellers are made up, and payments are simulate
 | [docs/SMART_SEARCH.md](docs/SMART_SEARCH.md) · [RU](docs/SMART_SEARCH-ru.md) | **The proposed differentiator:** search that turns queries into pills, groups listings by game and shows which keys work in the buyer's country |
 | [docs/DEPLOY_AZURE.md](docs/DEPLOY_AZURE.md) | Deploy to Azure Container Apps + PostgreSQL Flexible Server (free tiers), and which Azure database to choose |
 | [docs/INTERVIEW_NOTES.md](docs/INTERVIEW_NOTES.md) | Likely interview questions, with answers pointing to the code |
+| [docs/PROMPT_PLAYBOOK.md](docs/PROMPT_PLAYBOOK.md) | Ready-to-use, structured prompts for the next steps (React, smart search, deploy), to run in your own AI sessions |
 | [docs/AI_SESSION_LOG.md](docs/AI_SESSION_LOG.md) | Summary of how this was built with an AI agent (the full log still needs to be exported) |
 
 ## Requirements → implementation

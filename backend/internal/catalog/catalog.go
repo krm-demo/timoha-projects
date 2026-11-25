@@ -9,7 +9,8 @@ import (
 	"strconv"
 )
 
-// Money is an amount in euro cents. It is serialised as a decimal number
+// Money is an amount in euro cents. Integers, because float64 cannot hold
+// 0.10 exactly, and adding prices in floats drifts (0.1+0.2 != 0.3). It is serialised as a decimal number
 // (e.g. 19.99) so the frontend never deals with cents.
 type Money int64
 

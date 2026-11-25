@@ -113,6 +113,9 @@ func (s *PGStore) loadProducts(ctx context.Context, where string, args ...any) (
 	}
 	orows, err := s.db.QueryContext(ctx, `SELECT product_id,seller,rating,reviews,price_cents,stock,delivery FROM offers
 		WHERE product_id = ANY(string_to_array($1, ',')::int[])`, strings.Join(ids, ","))
+	// ^ One query for all offers instead of one per product (the "N+1 query"
+	// problem). The ids go in as one text parameter and are split in SQL,
+	// which keeps the query parameterized (no string-built SQL).
 	if err != nil {
 		return nil, err
 	}
@@ -180,11 +183,17 @@ func (s *PGStore) PlaceOrder(ctx context.Context, userID int64, req []LineReques
 	}
 	defer tx.Rollback()
 
+	// Postgres stores timestamps with microsecond precision. Truncating here
+	// means the time we return equals the time read back from /api/orders.
 	order := Order{UserID: userID, CreatedAt: s.now().UTC().Truncate(time.Microsecond)}
 	for _, l := range lines {
 		var it OrderItem
 		var price int64
 		var stock int
+		// FOR UPDATE OF o locks this offer row until COMMIT/ROLLBACK: a second
+		// checkout for the same offer waits here, then sees the reduced stock.
+		// "OF o" locks only the offer, not the product row we join for its
+		// name. Lines arrive sorted (ValidateLines) to avoid deadlocks.
 		err := tx.QueryRowContext(ctx, `SELECT p.id, p.slug, p.name, p.platform, p.region, o.seller, o.price_cents, o.stock
 			FROM offers o JOIN products p ON p.id = o.product_id
 			WHERE o.product_id = $1 AND o.seller = $2 FOR UPDATE OF o`, l.ProductID, l.Seller).
@@ -205,6 +214,10 @@ func (s *PGStore) PlaceOrder(ctx context.Context, userID int64, req []LineReques
 	order.Fee = ServiceFee(order.Subtotal)
 	order.Total = order.Subtotal + order.Fee
 
+	// The charge happens while the rows are locked but before any UPDATE:
+	// on failure the deferred Rollback releases the locks and nothing changed.
+	// (With a real payment provider, a slow call here would hold the locks;
+	// production systems reserve stock first and confirm via a webhook.)
 	if order.PaymentID, err = charge(order.Total); err != nil {
 		return Order{}, err // rollback; rows were only locked
 	}

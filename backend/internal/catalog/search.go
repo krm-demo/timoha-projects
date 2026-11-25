@@ -31,6 +31,8 @@ func normalize(s string) string {
 
 // levenshtein returns the edit distance, capped early for very different lengths.
 func levenshtein(a, b string) int {
+	// The distance is at least the length difference, so when that alone
+	// exceeds any typo tolerance (max 2) we skip the O(len(a)*len(b)) work.
 	if d := len(a) - len(b); d > 3 || d < -3 {
 		return 9
 	}
@@ -90,6 +92,9 @@ func Score(name, query string) float64 {
 				best = 1
 				break
 			}
+			// Compare with the whole word and with a prefix of the same
+			// length, so a typo in an unfinished word still matches:
+			// "nightr" vs "nightreign" → prefix "nightr" (0 typos).
 			d := levenshtein(w, nw)
 			if len(nw) > len(w) {
 				d = min(d, levenshtein(w, nw[:len(w)]))

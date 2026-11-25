@@ -10,6 +10,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"sort"
 	"strings"
 	"time"
 
@@ -93,6 +94,8 @@ type Store interface {
 
 // ServiceFee is the marketplace fee: 5% of the subtotal, rounded to the cent.
 func ServiceFee(subtotal catalog.Money) catalog.Money {
+	// Integer arithmetic: subtotal*5/100 with +50 so it rounds half up
+	// instead of truncating (1999c → 99.95c → 100c, not 99c).
 	return (subtotal*5 + 50) / 100
 }
 
@@ -120,6 +123,16 @@ func ValidateLines(lines []LineRequest) ([]LineRequest, error) {
 			return nil, fmt.Errorf("%w: at most 10 keys per offer", ErrBadLine)
 		}
 	}
+	// Always lock offers in the same order. If buyer A locks offer 1 then 2
+	// while buyer B locks 2 then 1, each waits for the other forever (a
+	// deadlock; Postgres would kill one of the transactions). Sorting by
+	// (product, seller) makes every checkout take locks in one global order.
+	sort.Slice(out, func(i, j int) bool {
+		if out[i].ProductID != out[j].ProductID {
+			return out[i].ProductID < out[j].ProductID
+		}
+		return out[i].Seller < out[j].Seller
+	})
 	return out, nil
 }
 
@@ -134,6 +147,8 @@ func NewKey() string {
 		if i > 0 && i%5 == 0 {
 			s.WriteByte('-')
 		}
+		// The alphabet has 32 symbols and 256 is divisible by 32, so
+		// byte % 32 is perfectly uniform (no "modulo bias").
 		s.WriteByte(keyAlphabet[int(c)%len(keyAlphabet)])
 	}
 	return s.String()

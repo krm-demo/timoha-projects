@@ -15,6 +15,8 @@ func CORS(allowed []string, next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		origin := r.Header.Get("Origin")
 		if origin != "" && (slices.Contains(allowed, "*") || slices.Contains(allowed, origin)) {
+			// Echo the specific origin instead of "*" and add Vary: Origin, so
+			// caches don't serve one site's CORS answer to another site.
 			w.Header().Set("Access-Control-Allow-Origin", origin)
 			w.Header().Set("Vary", "Origin")
 			w.Header().Set("Access-Control-Allow-Headers", "Authorization, Content-Type")
@@ -68,6 +70,10 @@ func RateLimit(perMinute int, next http.Handler) http.Handler {
 			next.ServeHTTP(w, r)
 			return
 		}
+		// Behind Render/Azure the real client IP is in X-Forwarded-For
+		// ("client, proxy1, proxy2"), and we take the first entry. A client
+		// can spoof this header when the app is reached directly, so this is a
+		// speed bump against password guessing, not a security boundary.
 		ip := r.Header.Get("X-Forwarded-For")
 		if ip == "" {
 			ip = r.RemoteAddr
@@ -80,6 +86,10 @@ func RateLimit(perMinute int, next http.Handler) http.Handler {
 			b = &bucket{float64(perMinute), now}
 			buckets[ip] = b
 		}
+		// Token bucket: refill continuously at perMinute tokens per minute,
+		// never above perMinute (the burst size); each request costs one token.
+		// Note: the map is never pruned, which is fine for a demo but would
+		// need a periodic cleanup under real traffic.
 		b.tokens = min(float64(perMinute), b.tokens+now.Sub(b.last).Minutes()*float64(perMinute))
 		b.last = now
 		allowed := b.tokens >= 1

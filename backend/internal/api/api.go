@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"errors"
 	"log/slog"
+	"math"
 	"net/http"
 	"net/mail"
 	"strconv"
@@ -75,7 +76,12 @@ func (s *Server) internal(w http.ResponseWriter, r *http.Request, err error) {
 }
 
 func decode(r *http.Request, v any) error {
+	// Cap bodies at 1 MiB so a client can't make us buffer gigabytes.
+	// (MaxBytesReader accepts a nil ResponseWriter; it is only used to ask
+	// the server to close the connection after an oversized body.)
 	dec := json.NewDecoder(http.MaxBytesReader(nil, r.Body, 1<<20))
+	// Reject unknown fields: a typo like "quantity" instead of "qty" fails
+	// loudly with 400 instead of silently ordering the default.
 	dec.DisallowUnknownFields()
 	return dec.Decode(v)
 }
@@ -138,7 +144,9 @@ func parseQuery(r *http.Request) (catalog.Query, error) {
 			if err != nil || x < 0 {
 				return q, errors.New(f.key + " must be a non-negative number")
 			}
-			m := catalog.Money(x * 100)
+			// Round, don't truncate: 19.99*100 is 1998.9999… in float64,
+			// and a plain conversion would turn "max=19.99" into 19.98.
+			m := catalog.Money(math.Round(x * 100))
 			*f.dst = &m
 		}
 	}

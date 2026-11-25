@@ -105,6 +105,10 @@ func List(all []Product, q Query) Result {
 	end := min(start+q.Limit, len(items))
 	res.Items = append([]Product{}, items[start:end]...)
 
+	// Disjunctive facets: when counting e.g. platforms, apply every filter
+	// EXCEPT the platform filter. Otherwise, after ticking "Steam", all other
+	// platforms would show 0 and the user could not see what adding "PSN"
+	// would give. This is how most shops (and Algolia) count facets.
 	for _, f := range facets {
 		counts := map[string]int{}
 		for _, p := range all {

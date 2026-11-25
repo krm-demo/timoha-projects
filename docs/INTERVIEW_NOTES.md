@@ -18,6 +18,12 @@ The client sends only `productId`, `seller` and `qty`. The price is read from th
 **What if two people buy the last key at the same time?**
 In Postgres, `SELECT … FOR UPDATE OF o` locks the offer row, so the second buyer waits, then sees `stock = 0` and gets `409 not enough stock`. In the file store, one mutex serializes orders.
 
+**Can two checkouts deadlock each other?**
+They could if they lock the same offers in a different order: A locks 1 then 2, B locks 2 then 1, and each waits for the other. `ValidateLines` (`store/store.go`) sorts cart lines by product and seller, so every checkout takes locks in one global order. This is covered by a test.
+
+**Why `math.Round` when parsing prices?**
+`19.99 * 100` is `1998.9999…` in float64. Converting that directly would turn `max=19.99` into 19.98 and hide products that cost exactly €19.99. This is covered by a regression test in `api/query_test.go`.
+
 **What if the payment fails halfway?**
 The charge happens *before* any write. If it fails, the transaction is rolled back, so stock and sold counts are untouched. This is tested in `store/contract_test.go` ("a failed payment must not change anything").
 

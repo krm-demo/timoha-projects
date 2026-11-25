@@ -41,3 +41,21 @@ func TestKeysAndFee(t *testing.T) {
 		t.Fatalf("fee: %v %v", ServiceFee(1999), ServiceFee(1000))
 	}
 }
+
+// Lines must come out in one global order so concurrent checkouts lock
+// offers in the same sequence (see ValidateLines).
+func TestValidateLinesSortsForLockOrder(t *testing.T) {
+	got, err := ValidateLines([]LineRequest{{2, "B", 1}, {1, "Z", 1}, {2, "A", 1}, {1, "Z", 2}})
+	if err != nil {
+		t.Fatal(err)
+	}
+	want := []LineRequest{{1, "Z", 3}, {2, "A", 1}, {2, "B", 1}}
+	if len(got) != len(want) {
+		t.Fatalf("got %v", got)
+	}
+	for i := range want {
+		if got[i] != want[i] {
+			t.Fatalf("got %v, want %v", got, want)
+		}
+	}
+}

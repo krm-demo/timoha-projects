@@ -12,6 +12,11 @@ Tool: Claude (Anthropic) agent with shell, GitHub and Gmail access. Date: 24 Nov
 | 4 | How hard is EN/DE? Explain frontend ↔ backend; compare Go with Java/Node/Python | Added README sections: a sequence diagram, measured Go numbers (≈6 MB binary, <0.3 s start, ≈12 MB RAM), a comparison table including PHP (the assignment allows only PHP or Go), and i18n estimates |
 | 5 | Keep it as is; prepare for Tymofii to take over | Wrote `docs/HANDOFF.md`, `docs/ROADMAP.md`, `docs/INTERVIEW_NOTES.md` and this file |
 
+| 6 | Azure deployment guide; propose an innovation; write it up as docs (EN + RU) | `DEPLOY_AZURE.md`, image publishing to GHCR, `SMART_SEARCH.md`/`-ru.md`, `ROADMAP-ru.md` |
+| 7 | Add comments to tricky places in the Go code | Commented the non-obvious parts: disjunctive facets, constant-time JWT check, atomic file writes, row locks, rounding. The review found and fixed two real bugs, each with a test: price filters truncated cents (`max=19.99` acted as 19.98), and multi-item checkouts could deadlock in Postgres (lines are now locked in a fixed order) |
+
+For the remaining work, see `PROMPT_PLAYBOOK.md`: structured prompts to run in your own sessions, so that part of the log is genuinely yours.
+
 ## Decisions worth mentioning in the submission
 
 - **Static fallback.** The site works on GitHub Pages with no server, so reviewers always have something to click. With the API available it switches to live data automatically.

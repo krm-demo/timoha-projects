@@ -66,6 +66,9 @@ func (s *FileStore) save() error {
 	if err != nil {
 		return err
 	}
+	// Write to a temp file, then rename over the old one. A rename within one
+	// directory is atomic, so a crash mid-write leaves either the old or the
+	// new database on disk, never a half-written file.
 	tmp := s.path + ".tmp"
 	if err := os.WriteFile(tmp, raw, 0o600); err != nil {
 		return err
@@ -75,6 +78,9 @@ func (s *FileStore) save() error {
 
 func (s *FileStore) Close() error { return nil }
 
+// cloneProduct copies the slices too. Returning p as-is would share the
+// Offers backing array with the store, and a caller sorting or editing
+// offers would silently change the "database" without holding the lock.
 func cloneProduct(p catalog.Product) catalog.Product {
 	p.Offers = slices.Clone(p.Offers)
 	p.Colors = slices.Clone(p.Colors)
@@ -161,6 +167,9 @@ func (s *FileStore) PlaceOrder(_ context.Context, userID int64, req []LineReques
 	order.Fee = ServiceFee(order.Subtotal)
 	order.Total = order.Subtotal + order.Fee
 
+	// Charge BEFORE changing anything. If payment fails we return here and
+	// stock, sold counts and orders are untouched. The mutex is still held,
+	// so nobody can buy the same last key while the payment is in flight.
 	payID, err := charge(order.Total)
 	if err != nil {
 		return Order{}, err // nothing was changed
