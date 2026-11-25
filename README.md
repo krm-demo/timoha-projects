@@ -16,6 +16,7 @@ All data is demo data: prices and sellers are made up, and payments are simulate
 | [docs/HANDOFF.md](docs/HANDOFF.md) | **Start here when you take over:** copy the repo, rename, enable Pages, deploy to Render, submission checklist |
 | [docs/ROADMAP.md](docs/ROADMAP.md) · [RU](docs/ROADMAP-ru.md) | Next steps with estimates: React + TypeScript port (required), smart search, deployment, EN/DE, backend ideas |
 | [docs/SMART_SEARCH.md](docs/SMART_SEARCH.md) · [RU](docs/SMART_SEARCH-ru.md) | **The proposed differentiator:** search that turns queries into pills, groups listings by game and shows which keys work in the buyer's country |
+| [docs/DEPLOY_VERCEL.md](docs/DEPLOY_VERCEL.md) | **Live deployment:** Go API on Vercel + Neon Postgres + website on GitHub Pages, all free |
 | [docs/DEPLOY_AZURE.md](docs/DEPLOY_AZURE.md) | Deploy to Azure Container Apps + PostgreSQL Flexible Server (free tiers), and which Azure database to choose |
 | [docs/INTERVIEW_NOTES.md](docs/INTERVIEW_NOTES.md) | Likely interview questions, with answers pointing to the code |
 | [docs/PROMPT_PLAYBOOK.md](docs/PROMPT_PLAYBOOK.md) | Ready-to-use, structured prompts for the next steps (React, smart search, deploy), to run in your own AI sessions |

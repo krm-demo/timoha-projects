@@ -1,0 +1,5 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "go",
+  "buildCommand": "go get github.com/jackc/pgx/v5@v5.7.2 && go mod tidy && go build -tags postgres -trimpath -ldflags '-s -w' -o server ./cmd/server"
+}
