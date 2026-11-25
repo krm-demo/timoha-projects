@@ -14,7 +14,8 @@ All data is demo data: prices and sellers are made up, and payments are simulate
 | File | For |
 |---|---|
 | [docs/HANDOFF.md](docs/HANDOFF.md) | **Start here when you take over:** copy the repo, rename, enable Pages, deploy to Render, submission checklist |
-| [docs/ROADMAP.md](docs/ROADMAP.md) | Next steps: React + TypeScript port (required), EN/DE, backend ideas |
+| [docs/ROADMAP.md](docs/ROADMAP.md) · [RU](docs/ROADMAP-ru.md) | Next steps with estimates: React + TypeScript port (required), smart search, deployment, EN/DE, backend ideas |
+| [docs/SMART_SEARCH.md](docs/SMART_SEARCH.md) · [RU](docs/SMART_SEARCH-ru.md) | **The proposed differentiator:** search that turns queries into pills, groups listings by game and shows which keys work in the buyer's country |
 | [docs/DEPLOY_AZURE.md](docs/DEPLOY_AZURE.md) | Deploy to Azure Container Apps + PostgreSQL Flexible Server (free tiers), and which Azure database to choose |
 | [docs/INTERVIEW_NOTES.md](docs/INTERVIEW_NOTES.md) | Likely interview questions, with answers pointing to the code |
 | [docs/AI_SESSION_LOG.md](docs/AI_SESSION_LOG.md) | Summary of how this was built with an AI agent (the full log still needs to be exported) |

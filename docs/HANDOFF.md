@@ -89,7 +89,8 @@ The deadline is **7 days after you received the assignment**. The email from Ene
 Gaps against the assignment, by priority:
 
 1. **The frontend must be React (TypeScript preferred).** Today it is vanilla JS. The plan is in `docs/ROADMAP.md`.
-2. Everything else in the assignment is covered: store, homepage blocks from separate services, typo-tolerant search, product page with seller offers, checkout with keys, auth, Eneba-like styling.
+2. **To stand out:** the smart search proposal in `docs/SMART_SEARCH.md` (Russian: `SMART_SEARCH-ru.md`). Before pitching it, check eneba.com for the problem it solves.
+3. Everything else in the assignment is covered: store, homepage blocks from separate services, typo-tolerant search, product page with seller offers, checkout with keys, auth, Eneba-like styling.
 
 ## 7. Be ready to explain the code
 
